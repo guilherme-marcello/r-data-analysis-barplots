@@ -27,5 +27,6 @@ top50 <- top[1:50,]
 View(top50)
 
 #STEP 4
-barplot(top50$Freq, main="Count of events",
+par(mar=c(11,4,4,4))
+barplot(height=top50$Freq,names=top50$groups,las=2, main="Count of events",
         xlab="Groups")
